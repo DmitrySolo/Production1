@@ -1,0 +1,10 @@
+body{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 1px 1px 1px 1px #0040D0;
+            box-shadow: px 1px 1px 1px #0040D0;
+    -webkit-border-radius: 12px;
+            border-radius: 12px;
+}
