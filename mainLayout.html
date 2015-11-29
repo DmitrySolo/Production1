@@ -7,15 +7,591 @@
   <body>
     <header>
       <div class='container'>
-        <div class='row'>
-          <div class='regular'>Hello men how are you Can you hear me men</div>
-          <div class='bold'>Hello men how are you Can you hear me men</div>
-          <div class='midi'>Hello men how are you Can you hear me men</div>
-          <div class='light'>Hello men how are you Can you hear me men</div>
-          <div class='light-i'>Hello men how are you Can you hear me men</div>
-        </div>
+        <nav class='row'>
+          <ul class='navigator'>
+            <li class='navigator__tab navigator__tab--selected col-lg-2 col-md-2'>Интернет-магазин</li>
+            <li class='navigator__tab col-lg-2 col-md-2'>Vip Сантехника</li>
+            <li class='navigator__tab col-lg-2 col-md-2'>Оптовым клиентам</li>
+            <li class='navigator__tab col-lg-2 col-md-2'>Сервисный центр</li>
+            <li class='navigator__tab col-lg-2 col-md-2'>Карьера</li>
+            <li class='navigator__tab col-lg-2 col-md-2 fa fa-compass'>Наши магазины</li>
+          </ul>
+        </nav>
+        <section class='mainPanel row'>
+          <div class='col-lg-5 col-md-5'>
+            <div class='mainPanel__logo'></div>
+            <div class='mainPanel__contacts'>
+              <div class='mainPanel__contacts_city'>
+                <i class='fa fa-map-marker'></i>
+                <span>Воронеж</span>
+              </div>
+              <div class='mainPanel__contacts_phone'>8 (473) 233 48 17</div>
+              <div class='mainPanel__contacts_workTime'>
+                <i class='fa fa-clock-o'></i>
+                <span>Сегодня: с 9 до 19 часов</span>
+              </div>
+            </div>
+          </div>
+          <div class='col-lg-4 col-md-4'>
+            <div class='mainPanel__actions'>
+              <div class='row'>
+                <div class='mainPanel__actions_login'></div>
+                <i class='fa fa-sign-in'></i>
+                <span>Вход Регистрация</span>
+              </div>
+              <div class='row'>
+                <div class='mainPanel__actions_searchOrder'></div>
+                <i class='fa fa-question-circle'></i>                 <span>Проверить статус заказа</span>
+              </div>
+            </div>
+          </div>
+          <div class='col-lg-3 col-md-3'>
+            <div class='mainPanel__cart'>
+              <i class='fa fa-shopping-cart'></i>
+              <span>Ваша корзина пока пуста</span>
+            </div>
+          </div>
+        </section>
       </div>
     </header>
-    <footer></footer>
+    <section class='menuPanel'>
+      <div class='container'>
+        <div class='menuPanel__container row'>
+          <div class='col-lg-5 col-md-5'>
+            <div class='menuPanel__CatalogButton'>
+              <i class='fa fa-bars'></i>
+              <span>Каталог товаров</span>
+            </div>
+            <ul class='menuPanel__SupportMenu'>
+              <li class='menuPanel__SupportMenu_item'>Доставка</li>
+              <li class='menuPanel__SupportMenu_item'>Оплата</li>
+            </ul>
+          </div>
+          <div class='col-lg-7 col-md-7'>
+            <div class='menuPanel__Search'>
+              <form>
+                <input class='menuPanel__Search_input' type='text'>
+                <label for='search'>
+                  <i class='fa fa-search'></i>
+                </label>
+                <input class='menuPanel__Search_submit' id='search' type='submit' value=''>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class='container'>
+      <div class='row'>
+        <section class='catalogAndBanners col-lg-12 col-md-12'>
+          <ul class='catalogAndBanners__catalogMenu'>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-cube'></i>
+              <span>Сантехника</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-flag'></i>
+              <span>Мебель для ванны</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-flash'></i>
+              <span>Санфаянс</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-flask'></i>
+              <span>Системы Инсталляций</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-database'></i>
+              <span>Мойки</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-get-pocket'></i>
+              <span>Электроарматура</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-calculator'></i>
+              <span>Люстры Светильники</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-calculator'></i>
+              <span>Инженерная Сантех</span>
+            </li>
+            <li class='catalogAndBanners__catalogMenu_item'>
+              <i class='fa fa-calculator'></i>
+              <span>Распродажа</span>
+            </li>
+          </ul>
+          <div class='catalogAndBanners__banners'>
+            <div class='catalogAndBanners__banners_mainBanner'></div>
+            <div class='catalogAndBanners__banners_discountCart'>
+              <div class='row'>
+                <div class='col-lg-12'>
+                  <span class='catalogAndBanners__banners_discountCart_5p'>5%</span>
+                  <h3 class='catalogAndBanners__banners_discountCart_title'>Накопительная дисконтная карта</h3>
+                </div>
+              </div>
+              <div class='row'>
+                <div class='catalogAndBanners__banners_discountCart_cart'>
+                  <div class='catalogAndBanners__banners_discountCart_cart_line'></div>
+                </div>
+              </div>
+              <div class='row'></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class='features row'>
+        <div class='features__item'>
+          <div class='features__item_icon'>
+            <i class='fa fa-truck'></i>
+          </div>
+          <div class='features__item_title'>Бесплатная доставка заказов от 4000 р</div>
+        </div>
+        <div class='features__item'>
+          <div class='features__item_icon'>
+            <i class='fa fa-cogs'></i>
+          </div>
+          <div class='features__item_title'>Установка и гарантийное обслуживание</div>
+        </div>
+        <div class='features__item'>
+          <div class='features__item_icon'>
+            <i class='fa fa-rocket'></i>
+          </div>
+          <div class='features__item_title'>Подъем на этаж</div>
+        </div>
+      </section>
+      <h2>Лучшие предложения</h2>
+      <div class='bestDeals'>
+        <div class='bestDeals__tabs row'>
+          <div class='bestDeals__tab bestDeals__tab--selected'>
+            <i class='fa fa-adjust'></i>
+            <span>Сантехника</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-adn'></i>
+            <span>Мебель для ванной</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-align-center'></i>
+            <span>Санфаянс</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-archive'></i>
+            <span>Cветильники</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-arrows-v'></i>
+            <span>Сантехника</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-asterisk'></i>
+            <span>Сантехника</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-align-right'></i>
+            <span>Сантехника</span>
+          </div>
+          <div class='bestDeals__tab'>
+            <i class='fa fa-android'></i>
+            <span>Сантехника</span>
+          </div>
+        </div>
+        <section class='goodsSlider row'>
+          <div class='goodsSlider__slideZone'>
+            <div class='goodsSlider__slideZone_line'>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp1'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Алегра 150х90 правая</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp2'></div>
+                <div class='goodsSlider__slideZone_item_title'>Душевая кабина SEAN S-5805 90x90 без электроники</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp3'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая Triton Стандарт 170x70</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp4'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Tessa 140х70 Стандарт</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp5'></div>
+                <div class='goodsSlider__slideZone_item_title'>Смеситель для умывальника Vitra T4 каскадный A41242EXP</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_button goodsSlider__slideZone_button--left'>
+              <i class='fa fa-chevron-left'></i>
+            </div>
+            <div class='goodsSlider__slideZone_button goodsSlider__slideZone_button--right'>
+              <i class='fa fa-chevron-right'></i>
+            </div>
+          </div>
+        </section>
+        <section class='goodsSlider row goodsSlider--hiden'>
+          <div class='goodsSlider__slideZone'>
+            <div class='goodsSlider__slideZone_button'>
+              <i class='fa fa-chevron-left'></i>
+            </div>
+            <div class='goodsSlider__slideZone_line'>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp1'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Алегра 150х90 правая</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp2'></div>
+                <div class='goodsSlider__slideZone_item_title'>Душевая кабина SEAN S-5805 90x90 без электроники</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp3'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая Triton Стандарт 170x70</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp4'></div>
+                <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Tessa 140х70 Стандарт</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+              <div class='goodsSlider__slideZone_item'>
+                <div class='goodsSlider__slideZone_item_imgCtn tmp5'></div>
+                <div class='goodsSlider__slideZone_item_title'>Смеситель для умывальника Vitra T4 каскадный A41242EXP</div>
+                <div class='goodsSlider__slideZone_item_priceCart'>
+                  <div class='goodsSlider__slideZone_item_priceCart_price'>
+                    <span>12 000</span>
+                    <i class='fa fa-ruble'></i>
+                  </div>
+                  <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                    <i class='fa fa-cart-arrow-down'></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_button'>
+              <i class='fa fa-chevron-right'></i>
+            </div>
+          </div>
+        </section>
+      </div>
+      <h2>НОВИНКИ</h2>
+      <section class='goodsSlider row goodsSlider__newItems'>
+        <div class='goodsSlider__slideZone'>
+          <div class='goodsSlider__slideZone_line'>
+            <div class='goodsSlider__slideZone_item'>
+              <div class='goodsSlider__slideZone_item_imgCtn tmp1'></div>
+              <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Алегра 150х90 правая</div>
+              <div class='goodsSlider__slideZone_item_newMark'>
+                <span>new</span>
+              </div>
+              <div class='goodsSlider__slideZone_item_priceCart'>
+                <div class='goodsSlider__slideZone_item_priceCart_price'>
+                  <span>12 000</span>
+                  <i class='fa fa-ruble'></i>
+                </div>
+                <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                  <i class='fa fa-cart-arrow-down'></i>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_item'>
+              <div class='goodsSlider__slideZone_item_imgCtn tmp2'></div>
+              <div class='goodsSlider__slideZone_item_title'>Душевая кабина SEAN S-5805 90x90 без электроники</div>
+              <div class='goodsSlider__slideZone_item_newMark'>
+                <span>new</span>
+              </div>
+              <div class='goodsSlider__slideZone_item_priceCart'>
+                <div class='goodsSlider__slideZone_item_priceCart_price'>
+                  <span>12 000</span>
+                  <i class='fa fa-ruble'></i>
+                </div>
+                <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                  <i class='fa fa-cart-arrow-down'></i>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_item'>
+              <div class='goodsSlider__slideZone_item_imgCtn tmp3'></div>
+              <div class='goodsSlider__slideZone_item_title'>Ванна акриловая Triton Стандарт 170x70</div>
+              <div class='goodsSlider__slideZone_item_newMark'>
+                <span>new</span>
+              </div>
+              <div class='goodsSlider__slideZone_item_priceCart'>
+                <div class='goodsSlider__slideZone_item_priceCart_price'>
+                  <span>12 000</span>
+                  <i class='fa fa-ruble'></i>
+                </div>
+                <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                  <i class='fa fa-cart-arrow-down'></i>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_item'>
+              <div class='goodsSlider__slideZone_item_imgCtn tmp4'></div>
+              <div class='goodsSlider__slideZone_item_title'>Ванна акриловая BAS Tessa 140х70 Стандарт</div>
+              <div class='goodsSlider__slideZone_item_newMark'>
+                <span>new</span>
+              </div>
+              <div class='goodsSlider__slideZone_item_priceCart'>
+                <div class='goodsSlider__slideZone_item_priceCart_price'>
+                  <span>12 000</span>
+                  <i class='fa fa-ruble'></i>
+                </div>
+                <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                  <i class='fa fa-cart-arrow-down'></i>
+                </div>
+              </div>
+            </div>
+            <div class='goodsSlider__slideZone_item'>
+              <div class='goodsSlider__slideZone_item_imgCtn tmp5'></div>
+              <div class='goodsSlider__slideZone_item_title'>Смеситель для умывальника Vitra T4 каскадный A41242EXP</div>
+              <div class='goodsSlider__slideZone_item_newMark'>
+                <span>new</span>
+              </div>
+              <div class='goodsSlider__slideZone_item_priceCart'>
+                <div class='goodsSlider__slideZone_item_priceCart_price'>
+                  <span>12 000</span>
+                  <i class='fa fa-ruble'></i>
+                </div>
+                <div class='goodsSlider__slideZone_item_priceCart_cart'>
+                  <i class='fa fa-cart-arrow-down'></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class='info__line'>
+      <div class='container'>
+        <section class='info row'>
+          <div class='info__container'>
+            <div class='info__leftHalf'>
+              <div class='info__section info__section_advantages'>
+                <div class='info__section_title'>
+                  <h3>Покупки не выходя из дома</h3>
+                </div>
+              </div>
+            </div>
+            <div class='info__rightHalf'>
+              <div class='info__rightHalf_topLine'>
+                <div class='info__section info__section_plumber'>
+                  <div class='info__section_title'>
+                    <h3>Заказывайте с установкой</h3>
+                  </div>
+                </div>
+              </div>
+              <div class='info__rightHalf_bottomLine'>
+                <div class='info__section info__section_delivery'>
+                  <div class='info__section_title'>
+                    <h3>Удобная доставка</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class='container'>
+      <section class='news row'>
+        <div class='col-lg-12'>
+          <div class='news__title'>
+            <h2>Новости</h2>
+          </div>
+          <div class='news__showAll'>
+            <a>Все новости</a>
+          </div>
+        </div>
+        <div class='news__container'>
+          <div class='col-lg-12'>
+            <div class='news__item'>
+              <div class='news__item_date'>
+                <span>01.10</span>
+              </div>
+              <div class='news__item_content'>
+                <span>Абсолютно свежая новость только из печки</span>
+              </div>
+              <div class='news__item_more'>
+                <span>Подробнее</span>
+              </div>
+            </div>
+            <div class='news__item'>
+              <div class='news__item_date'>
+                <span>03.09</span>
+              </div>
+              <div class='news__item_content'>
+                <span>Новость постарше но совсем нена много</span>
+              </div>
+              <div class='news__item_more'>
+                <span>Подробнее</span>
+              </div>
+            </div>
+            <div class='news__item'>
+              <div class='news__item_date'>
+                <span>02.09</span>
+              </div>
+              <div class='news__item_content'>
+                <span>Совсем старая новость -потеряла всякую важность</span>
+              </div>
+              <div class='news__item_more'>
+                <span>Подробнее</span>
+              </div>
+            </div>
+            <div class='news__item'>
+              <div class='news__item_date'>
+                <span>21.08</span>
+              </div>
+              <div class='news__item_content'>
+                <span>Никто уже и не помнит кто и зачем написал Эту новость Никто уже и не помнит кто и зачем написал Эту новость</span>
+              </div>
+              <div class='news__item_more'>
+                <span>Подробнее</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class='subMenu row'>
+      <div class='container'>
+        <ul class='subMenu__column col-lg-3 col-md-3'>
+          <li class='subMenu__column_title'>
+            <h3>О компании</h3>
+          </li>
+          <li>Компания Окно в Европу</li>
+          <li>Вакансии</li>
+          <li>Адреса Магазинов</li>
+          <li>Юридическая информация</li>
+          <li>Еще информация</li>
+        </ul>
+        <ul class='subMenu__column col-lg-3 col-md-3'>
+          <li class='subMenu__column_title'>
+            <h3>О компании</h3>
+          </li>
+          <li>Компания Окно в Европу</li>
+          <li>Вакансии</li>
+          <li>Адреса Магазинов</li>
+          <li>Юридическая информация</li>
+          <li>Еще информация</li>
+        </ul>
+        <ul class='subMenu__column col-lg-3 col-md-3'>
+          <li class='subMenu__column_title'>
+            <h3>О компании</h3>
+          </li>
+          <li>Компания Окно в Европу</li>
+          <li>Вакансии</li>
+          <li>Адреса Магазинов</li>
+          <li>Юридическая информация</li>
+          <li>Еще информация</li>
+        </ul>
+        <ul class='subMenu__column col-lg-3 col-md-3'>
+          <li class='subMenu__column_title'>
+            <h3>Связаться с нами</h3>
+          </li>
+          <li class='subMenu__column_phone'>
+            <i class='fa fa-mobile-phone'></i>
+            <span>8 (473) 233-48-17</span>
+          </li>
+          <li class='subMenu__column_phone'>
+            <i class='fa fa-mobile-phone'></i>
+            <span>8 (473) 239-06-76</span>
+          </li>
+          <li class='subMenu__column_feedBackButton'>
+            <i class='fa fa-envelope'></i>
+            <span>Форма обратной связи</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <div class='container'>
+        <div class='row'>
+          <div class='footer__logo'></div>
+          <div class='footer__signature'>
+            <span>&#169; Сантехмаркет Окно в Европу 2015г.</span>
+          </div>
+          <div class='footer__note'>Цены в розничных магазинах Окно в Европу могут отличаться от цен указанных на сайте.</div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
